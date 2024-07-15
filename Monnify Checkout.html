@@ -1,0 +1,64 @@
+<html>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Monnify Checkout page</title>
+        <style>
+            
+            body{
+                display: flex;
+                gap: 9px;
+                flex-direction: column;
+                align-items: center;
+                background-color:rgba(200, 195, 221, 0.568) ;
+            }
+            button{
+                    background-color: rgb(170, 111, 111);
+                    border-radius: 7px;
+                    height: 20px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <h1>Monnify</h1><br><br>
+            <input type="radio" id="Payment Option" name="Payment Option">
+            <label for="Payment Option">Card</label>
+            <strong> *Card Payment is only avaliable for now*</strong>
+            <br><br>
+        <form action="/action_page.php"
+        autocomplete="on">
+            <label>Email:</label><br>
+            <input type="text" id="Email" name="Email"/><br><br>
+            <label>Card holder name:</label><br>
+            <input type="text" id="Card holder name" name="Card holder name"/><br>
+            <br>
+            <label>Card Number:</label><br>
+            <input type="text" id="Card Number" name="Card Number" placeholder="1234 5678 9012 3456" size="15"/><br>
+            <br>
+            
+            <label for="month-year">MM/YY</label> 
+            <input type="month" id="month-year" name="month-year">
+            <label for="CVV">CVV</label>
+            <input type="password" id="CVV" name="CVV" size="1" maxlength="3"><br><br>
+            <input type="checkbox" id="save card" name="save card">
+            <label for="save card">Do you want to save this card</label><BR>
+            <button><strong>PAY NOW</strong></button>
+        </form>
+
+    </body>
+
+
+
+
+   
+    </html>
+
+
+
+
+
+
+  
